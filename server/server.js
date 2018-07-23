@@ -19,7 +19,9 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use( bodyParser.json() );
-app.use( cors() );
+app.use( cors({
+  origin: 'https://reactiverestaurant.herokuapp.com/'
+}) );
 
 // requests
 app.get('/', (req, res, next) => {
