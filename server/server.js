@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
 
 app.use( bodyParser.json() );
 app.use( cors({
-  origin: 'https://reactiverestaurant.herokuapp.com/'
+  origin: 'https://reactiverestaurant.herokuapp.com'
 }) );
 
 // requests
